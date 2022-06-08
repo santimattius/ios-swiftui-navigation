@@ -11,6 +11,10 @@
 		4B8429E92850DA0800C4C2C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8429E82850DA0800C4C2C5 /* ContentView.swift */; };
 		4B8429EB2850DA0E00C4C2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8429EA2850DA0E00C4C2C5 /* Assets.xcassets */; };
 		4B8429EE2850DA0E00C4C2C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8429ED2850DA0E00C4C2C5 /* Preview Assets.xcassets */; };
+		4BE514982851506200A6820E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE514972851506200A6820E /* Model.swift */; };
+		4BE5149A2851510900A6820E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE514992851510900A6820E /* Data.swift */; };
+		4BE5149C285159E600A6820E /* DesignPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE5149B285159E600A6820E /* DesignPatterns.swift */; };
+		4BE5149E28515BF000A6820E /* CodeSmells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE5149D28515BF000A6820E /* CodeSmells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		4B8429E82850DA0800C4C2C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B8429EA2850DA0E00C4C2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B8429ED2850DA0E00C4C2C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4BE514972851506200A6820E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4BE514992851510900A6820E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		4BE5149B285159E600A6820E /* DesignPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatterns.swift; sourceTree = "<group>"; };
+		4BE5149D28515BF000A6820E /* CodeSmells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSmells.swift; sourceTree = "<group>"; };
+		4BE514A1285161A700A6820E /* SwiftUI-Navigation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI-Navigation-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +60,15 @@
 		4B8429E52850DA0800C4C2C5 /* SwiftUI Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				4BE514A1285161A700A6820E /* SwiftUI-Navigation-Info.plist */,
+				4BE514972851506200A6820E /* Model.swift */,
 				4B8429E62850DA0800C4C2C5 /* SwiftUI_NavigationApp.swift */,
 				4B8429E82850DA0800C4C2C5 /* ContentView.swift */,
 				4B8429EA2850DA0E00C4C2C5 /* Assets.xcassets */,
 				4B8429EC2850DA0E00C4C2C5 /* Preview Content */,
+				4BE514992851510900A6820E /* Data.swift */,
+				4BE5149B285159E600A6820E /* DesignPatterns.swift */,
+				4BE5149D28515BF000A6820E /* CodeSmells.swift */,
 			);
 			path = "SwiftUI Navigation";
 			sourceTree = "<group>";
@@ -137,8 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE5149E28515BF000A6820E /* CodeSmells.swift in Sources */,
+				4BE5149C285159E600A6820E /* DesignPatterns.swift in Sources */,
 				4B8429E92850DA0800C4C2C5 /* ContentView.swift in Sources */,
+				4BE514982851506200A6820E /* Model.swift in Sources */,
 				4B8429E72850DA0800C4C2C5 /* SwiftUI_NavigationApp.swift in Sources */,
+				4BE5149A2851510900A6820E /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +213,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -267,19 +285,23 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Navigation/Preview Content\"";
+				DEVELOPMENT_TEAM = GZNR5GETS3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Navigation-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Refactoring;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.santimattius.SwiftUI-Navigation";
+				PRODUCT_BUNDLE_IDENTIFIER = com.santimattius.navigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -295,19 +317,23 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Navigation/Preview Content\"";
+				DEVELOPMENT_TEAM = GZNR5GETS3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Navigation-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Refactoring;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.santimattius.SwiftUI-Navigation";
+				PRODUCT_BUNDLE_IDENTIFIER = com.santimattius.navigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
