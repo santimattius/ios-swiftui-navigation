@@ -38,11 +38,10 @@ struct ContentView: View {
             })
             .navigationTitle(Text("Refactoring"))
         }.onOpenURL { url in
-            print(url)
+
             let host = url.host()
             let link = url.lastPathComponent
-            print(link)
-            
+        
             if !["smells","patterns"].contains(host) {
                 return
             }
